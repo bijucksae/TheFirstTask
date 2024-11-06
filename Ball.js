@@ -8,7 +8,7 @@ class Ball {
   }
 
   applyForce(force) {
-    let f = p5.Vector.div(force, 1);
+    let f = p5.Vector.div(force, this.mass);
     this.acceleration.add(f);
   }
 
