@@ -2,7 +2,7 @@ let gravity;
 
 function setup() {
   createCanvas(400, 400);
-  gravity = creatveVector(0, 0.1);
+  gravity = createVector(0, 0.1);
 }
 
 function draw() {
