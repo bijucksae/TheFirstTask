@@ -4,6 +4,7 @@ class Ball {
     this.velocity = createVector(0, 0);
     this.acceleration = createVector(0, 0);
     this.radius = 20;
+    this.mass = 2;
   }
 
   applyForce(force) {
