@@ -22,4 +22,9 @@ class Ball {
     }
   }
 
+  show() {
+    fill(127);
+    noStroke();
+    ellipse(this.position.x, this.position.y, this.radius * 2); // 공 그리기
+  }
 }
