@@ -11,4 +11,15 @@ class Ball {
     this.acceleration.add(f);
   }
 
+  update() {
+    this.velocity.add(this.acceleration);
+    this.position.add(this.velocity);
+    this.acceleration.mult(0);
+
+    if (this.position.y > height - this.radius) {
+      this.velocity.y *= -0.9;
+      this.position.y = height - this.radius;
+    }
+  }
+
 }
