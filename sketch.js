@@ -12,3 +12,9 @@ function draw() {
   ball.update();
   ball.show(); 
 }
+
+function mousePressed() {
+  let force = createVector(0, -5);
+  ball.applyForce(force);
+}
+
